@@ -17,7 +17,7 @@ $(document).ready(function(){
                 type:'post',
                 data:{nombre:fname,apellido:lname,usuario:uname,tipousuario:tuser},
                 success:function(response){
-                    if(response != "Error"){
+                    if(response != "Error!"){
                         alert("Exito");
                     }else{
                         alert("No Exito!");

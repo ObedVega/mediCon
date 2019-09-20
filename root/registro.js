@@ -17,13 +17,11 @@ $(document).ready(function(){
                 type:'post',
                 data:{nombre:fname,apellido:lname,usuario:uname,tipousuario:tuser},
                 success:function(response){
-//                    if(response != "Error"){
-                        alert(response);
-                        //window.location = "home.php";
-//                    }else{
-//                        msg = "Usuario o Contraseña Invalidas!";
-//                        alert("No Exito!");
-//                    }
+                    if(response != "Error"){
+                        alert("Exito");
+                    }else{
+                        alert("No Exito!");
+                    }
                 }
             });
         }else{
